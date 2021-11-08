@@ -4,7 +4,7 @@ package hongyzeng.aes;
  * Used by AES for KeyExpansion
  */
 class KeyExpansion {
-    private byte[][] allKeys;
+    private final byte[][] allKeys;
 
     static final byte[][] Sbox = new byte[][] {
         {(byte) 0x63, (byte) 0x7C, (byte) 0x77, (byte) 0x7B, (byte) 0xF2, (byte) 0x6B, (byte) 0x6F, (byte) 0xC5, (byte) 0x30, (byte) 0x01, (byte) 0x67, (byte) 0x2B, (byte) 0xFE, (byte) 0xD7, (byte) 0xAB, (byte) 0x76},
