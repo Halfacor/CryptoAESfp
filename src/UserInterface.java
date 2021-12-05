@@ -48,7 +48,7 @@ public class UserInterface {
                 System.out.println("You gave a file instead of dir!");
                 continue;
             }
-            outputFile = new File(pd.getAbsolutePath() + "\\" + (aesMode ? "Dec" : "Enc") +"Output_" + System.currentTimeMillis() + ".txt");
+            outputFile = new File(pd.getAbsolutePath() + "/" + (aesMode ? "Dec" : "Enc") +"Output_" + System.currentTimeMillis() + ".txt");
         }
         CBCMachine cbcMachine = new CBCMachine(textFile, keyFile, ivFile, aesMode, outputFile);
         cbcMachine.start();

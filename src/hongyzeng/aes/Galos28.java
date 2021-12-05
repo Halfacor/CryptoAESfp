@@ -1,9 +1,13 @@
 package hongyzeng.aes;
 
+/**
+ * This class handles logics for galos2^8 field arithmetics
+ */
 class Galos28 {
     // https://stackoverflow.com/questions/24004579/xor-bytes-in-java
     // https://stackoverflow.com/questions/7401550/how-to-convert-int-to-unsigned-byte-and-back
 
+    // just XOR
     static byte add(byte a, byte b) {
         int tmp1 = a & 0b00000000000000000000000011111111;
         int tmp2 = b & 0b00000000000000000000000011111111;

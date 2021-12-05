@@ -13,7 +13,7 @@ public class UsrIVGenerator {
             System.out.println("You gave a file instead of dir!");
             return null;
         }
-        String pathName = parentDir + "\\" + "IV_" + System.currentTimeMillis() + ".txt";
+        String pathName = parentDir + "/" + "IV_" + System.currentTimeMillis() + ".txt";
         File keyFile = new File(pathName);
         byte[] IV = new byte[16];
         SecureRandom sr = new SecureRandom();

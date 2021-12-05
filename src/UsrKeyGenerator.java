@@ -15,7 +15,7 @@ public class UsrKeyGenerator {
             System.out.println("You gave a file instead of dir!");
             return null;
         }
-        String pathName = parentDir + "\\" + "Key_" + System.currentTimeMillis() + ".txt";
+        String pathName = parentDir + "/" + "Key_" + System.currentTimeMillis() + ".txt";
         File keyFile = new File(pathName);
         byte[] key = new byte[16];
         SecureRandom sr = new SecureRandom();
